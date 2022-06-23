@@ -1,11 +1,11 @@
 export default class Character {
-  constructor(classType, hp, armor) {
-    this.classType = classType;
+  constructor(name, hp, color) {
+    this.name = name;
     this.hp = hp;
-    this.armor = armor;
+    this.color = color;
   }
 
-  testFunction() {
-    return 'hello';
+  charAttributes() {
+    return [this.name, this.hp, this.color];
   }
 }
