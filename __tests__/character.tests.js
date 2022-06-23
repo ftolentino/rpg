@@ -21,7 +21,12 @@ describe('Character', () => {
         name: "Ranger Brick", 
         hp: 3, color: "Brown", 
         bowType: "Long Bow"
-      });
+      });    
+  });
+
+  test('longRangeAttack returns a string', () => {
+    const character2 = new Ranger();
+    expect(character2.longRangeAttack()).toEqual(`you've been attacked, yo`);
   });
 });
 
